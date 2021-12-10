@@ -8,16 +8,15 @@ const renderCard = (data) => {
     Promise.all(    data.map( async (item) => {
         
 
-        //const video = await getVideo(item.id, item.media_type);
-        console.log(item);
+        const video = await getVideo(item.id, item.media_type);
      
-        //const key = video.results[0]?.key;
+        const key = video.results[0]?.key;
 
         const card = document.createElement('li');
         card.className = 'other-films__item';
 
         const link = document.createElement('a');
-        //if(key) link.href = `https://youtu.be/${key}`;
+        if(key) link.href = `https://youtu.be/${key}`;
         link.className = 'other-films__link'
         link.dataset.rating = item.vote_average == 0 ? '-' : item.vote_average;
 
