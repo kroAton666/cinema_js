@@ -1,7 +1,6 @@
 import{
     getPopular,
     getTop,
-    getTriends
 } from './services.js';
 import renderCard from "./renderCard.js";
 import renderVideo from './renderVideo.js';
