@@ -40,6 +40,7 @@ const menuLink = () => {
                 }
                 if(target.classList.contains('get-nav__link_triends')){
                     renderVideo();
+                    filmWeek.style.display = 'block';
                 }
                 
             }
