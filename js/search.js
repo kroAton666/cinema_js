@@ -22,7 +22,7 @@ const search = () => {
         })
         .then(() =>{
             filmWeek.remove()
-            title.textContent = 'Результат поиска';
+            title.textContent = 'Результат пошуку';
         })
         .catch(err =>{
             title.textContent = err;
