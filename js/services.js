@@ -1,6 +1,6 @@
 const API_KEY = '8e77f18670c85ae0619e40d29b8258a5';
 const BASE_URL = 'https://api.themoviedb.org/3/';
-const LANGUAGE = '&language=ru-RU';
+const LANGUAGE = '&language=ua-UK';
 
 //trending/all/day?api_key=<<api_key>>
 
